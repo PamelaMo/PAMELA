@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamela Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+<div class="container">
+<nav>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+</nav>
+<div class="header-text">
+<p>Graphic Designer</p>
+<h1>Hello, I'm <span>Pamela</span><br> welcome to my page</h1>
+</div>
+</div>
+    </div>
+<!-------about------->
+    <div id="about">
+<div class="container">
+<div class="row">
+<div class="about-col-1">
+    <img src="img/PAMELA.jpeg" alt="">
+</div>
+<div class="about-col-2">
+    <h1 class="sub-title">About Me</h1>
+    <p>I'm a determined goal getter. I commit wholeheartedly to achieving it. I believe in the power of ambition and hard work,
+        which has led me to accomplish various feats in both my personal and professional life.</p>
+
+        <div class="tab-titles">
+<p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+<ul>
+    <li><span>Graphic Designer</span><br>Creating designs using canva</li> 
+    <li><span>Graphic Designer</span><br>Creating designs using canva</li> 
+</ul>
+        </div>
+        <div class="tab-contents" id="experience">
+            <ul>
+                <li><span>2022-2023</span><br>Brandify Hub</li> 
+            </ul>
+                    </div>
+</div>
+</div>
+</div>
+    </div>
+<!----------------services------------>
+<div id="services">
+<div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+<div>
+    <h2>Graphic Design</h2>
+    <p>We handle all your designs and deliver excellent results.</p>
+    <a href="#">Learn more</a>
+</div>
+<div>
+    <h2>Social Media Handler</h2>
+    <p>We help create page visibility and growth.</p>
+    <a href="#">Learn more</a>
+</div>
+<div>
+    <h2>Graphic Design</h2>
+    <p>We handle all your designs and deliver excellent results.</p>
+    <a href="#">Learn more</a>
+</div>
+    </div>
+</div>
+</div>
+<!-- ----------portfolio---------- -->
+<div id="portfolio">
+<div class="container">
+<h1 class="sub-title">My Work</h1>
+<div class="work-list">
+<div class="work">
+<img src="img/DEAL.jpeg" alt="">
+</div>
+</div>
+<div class="work">
+    <img src="img/JULY.jpeg" alt="">
+    </div>
+    <div class="work">
+        <img src="img/TRAVEL.jpeg" alt="">
+        </div>
+</div>
+</div>
+</div>
+<!------------contact--------->
+<div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>momohpamela@gmail.com</p>
+        </div>
+        <div class="contact-right">
+            <form>
+<input type="text" name="Name" placeholder="Your Name" required>
+<input type="email" name="Email" placeholder="Your Email" required>
+<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+<button type="submit" class="btn btn2">submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright @ Pamela. Made with love by MelaAbbi</p>
+</div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classlist.remove("active-link");<
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classlist.remove("active-tab");
+            }
+            event.currentTarget.classlist.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
